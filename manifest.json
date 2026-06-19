@@ -1,0 +1,21 @@
+{
+  "name": "cortex-plugin-pr-summarizer",
+  "version": "1.0.0",
+  "description": "Pull Request Summarizer — Generate concise PR summaries from diffs with intent, impact, and testing notes",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-pr-summarizer",
+  "homepage": "https://cortexprism.io/marketplace/plugins/pr-summarizer",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "pr_summarize", "description": "Generate PR summary from diff", "params": [] },
+    { "name": "pr_explain_impact", "description": "Explain the impact of changes", "params": [] },
+    { "name": "pr_breaking_changes", "description": "Identify breaking changes", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
